@@ -1,0 +1,19 @@
+{
+ "outcome": "OK",
+ "reason_code": "OK",
+ "fail_path": null,
+ "transactionId": "atp_photo_001",
+ "receiptHash": "sha256:example",
+ "eventRoot": "sha256:example",
+ "checks": {
+  "schema": true,
+  "receipt_hash": true,
+  "signature": true,
+  "event_chain": true,
+  "leases": true,
+  "artifacts": true
+ },
+ "source": "ATP_AGENT_LOOP",
+ "lane": "classic_ed25519_v1",
+ "policy_version": "verifier-output-v0"
+}
