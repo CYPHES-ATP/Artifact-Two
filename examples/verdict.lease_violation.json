@@ -1,0 +1,10 @@
+{
+ "outcome": "FAIL",
+ "source": "ATP_AGENT_LOOP",
+ "transactionId": "example",
+ "receiptHash": "sha256:example",
+ "eventRoot": "sha256:example",
+ "reason_code": "LEASE_VIOLATION",
+ "lane": "classic_ed25519_v1",
+ "message": "Access was not covered by an active lease"
+}
