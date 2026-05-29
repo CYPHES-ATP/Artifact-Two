@@ -1,0 +1,89 @@
+{
+  "accessed": {
+    "leases": [
+      "lease_photos_read_001",
+      "lease_stage_write_001"
+    ],
+    "resources": [
+      "/private/tmp/mock_photos_atp",
+      "/tmp/cyphes-atp/runs/atp_photo_001/artifacts"
+    ]
+  },
+  "approved": {
+    "by": "did:example:owner:123",
+    "method": "human-approval-simulated",
+    "time": "2026-05-25T00:56:26.654191Z"
+  },
+  "atp": "0.3",
+  "changed": {
+    "artifacts": [
+      {
+        "mediaType": "application/json",
+        "path": "manifest.json",
+        "sha256": "sha256:c5e6ba3b4a52216843a9f1a0d28ba2caba08180434327f9a89f63d6ae3e83fad",
+        "sizeBytes": 3767
+      },
+      {
+        "mediaType": "application/json",
+        "path": "album-plan.json",
+        "sha256": "sha256:ee63bc3437b3d895a8ac92e59c0ac0b29c9c6bd4594fe0561723812e9142496f",
+        "sizeBytes": 1137
+      },
+      {
+        "mediaType": "text/csv",
+        "path": "duplicate-candidates.csv",
+        "sha256": "sha256:5e46ce87f292b9f7664881c616f444a9ed7783552125c946a2f70edc6b44d924",
+        "sizeBytes": 247
+      }
+    ],
+    "externalState": "staging-directory-only",
+    "originalsModified": false
+  },
+  "eventRoot": "sha256:6efbb82e3edbec8e21745edf0b28d5aa6dc9af992536cdc1e37cac7c4bf7edef",
+  "paid": {
+    "amount": "0",
+    "asset": "none",
+    "condition": "receipt",
+    "disputePolicy": "local-demo",
+    "payee": "did:example:agent:worker-42",
+    "payer": "did:example:agent:requester-7",
+    "proofOfPayment": "waived",
+    "rail": "zero-value",
+    "refundPolicy": "not-applicable"
+  },
+  "receiptHash": "sha256:edcafcd52e42548e44ebab5c73919255321c37c513e8d1a30046941ec3bf3abf",
+  "receiptType": "ProofOfCognition",
+  "requested": {
+    "budget": {
+      "amount": "0",
+      "asset": "none"
+    },
+    "constraints": [
+      "do-not-delete-originals",
+      "stage-changes-first"
+    ],
+    "deadline": "2026-05-25T01:56:26.641584Z",
+    "intent": {
+      "budget": {
+        "amount": "0",
+        "asset": "none"
+      },
+      "constraints": [
+        "do-not-delete-originals",
+        "stage-changes-first"
+      ],
+      "deadline": "2026-05-25T01:56:26.641584Z",
+      "goal": "Organize photo library into dated event albums",
+      "success": "owner-approves-staged-manifest"
+    },
+    "success": "owner-approves-staged-manifest"
+  },
+  "signatures": [
+    {
+      "kid": "did:example:agent:worker-42#key-1",
+      "signature": "vCFRn8ZSpZjuyz8T47YOpS2u55uo-kb6BhGcMlU4M_Blict6fMbFkjXWr6Ux6BTTz67XJvia55cDYX8tglntDA",
+      "type": "Ed25519"
+    }
+  ],
+  "transactionId": "atp_photo_001"
+}

@@ -1,0 +1,30 @@
+{
+  "card": {
+    "agentId": "did:example:agent:worker-42",
+    "atp": "0.3",
+    "capabilities": [
+      "photo-organization",
+      "metadata-extraction",
+      "duplicate-detection"
+    ],
+    "endpoints": [
+      {
+        "transport": "http",
+        "url": "http://127.0.0.1:56612/atp"
+      }
+    ],
+    "proofMethods": [
+      "Ed25519"
+    ],
+    "requiredExtensions": [],
+    "settlementRails": [
+      "zero-value"
+    ]
+  },
+  "cardHash": "sha256:c10218324a7eda231030632f0feeecfd10b685b4c80971802c97e86ddd1af0c0",
+  "proof": {
+    "kid": "did:example:agent:worker-42#key-1",
+    "signature": "lwm9T8ho1qwMU2lopApvSkA7UIEyKgYwg7S7dRbdGgA_5kHtLfVggVtAYtQnOBjEjhriwzzFAsfy1AYwbRbfBg",
+    "type": "Ed25519"
+  }
+}

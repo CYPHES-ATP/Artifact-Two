@@ -1,0 +1,127 @@
+{
+  "dataset": {
+    "name": "mock photo library"
+  },
+  "dedupe": {
+    "duplicateCandidateCount": 2,
+    "inputPhotoCount": 10,
+    "mode": "content-hash",
+    "uniquePhotoCount": 10
+  },
+  "generatedAt": "2026-05-25T00:56:26.651042Z",
+  "leaseIdsUsed": [
+    "lease_photos_read_001",
+    "lease_stage_write_001"
+  ],
+  "photos": [
+    {
+      "contentGroup": "launch-a",
+      "contentHash": "sha256:2d6dddd7f661e7d6d7e087cd045643ab29d9e055f58d7311277fe83732e99cd7",
+      "createdDate": "2026-05-21",
+      "eventLabel": "WAGMI City Launch",
+      "filename": "img_0001.jpg"
+    },
+    {
+      "contentGroup": "launch-b",
+      "contentHash": "sha256:25e1926763e2e3a36364c39f8346a42bd8097598fc0aca30079fc4e82ed03236",
+      "createdDate": "2026-05-21",
+      "eventLabel": "WAGMI City Launch",
+      "filename": "img_0002.jpg"
+    },
+    {
+      "contentGroup": "launch-a",
+      "contentHash": "sha256:2d6dddd7f661e7d6d7e087cd045643ab29d9e055f58d7311277fe83732e99cd7",
+      "createdDate": "2026-05-21",
+      "eventLabel": "WAGMI City Launch",
+      "filename": "img_0003.jpg"
+    },
+    {
+      "contentGroup": "briefing-a",
+      "contentHash": "sha256:a7fdd7406bfac3c6e40d076957ff3849ba898a5f4e9aacbf44a60bf8ec63d42d",
+      "createdDate": "2026-05-22",
+      "eventLabel": "Planet X Briefing",
+      "filename": "img_0004.jpg"
+    },
+    {
+      "contentGroup": "briefing-b",
+      "contentHash": "sha256:172a44c589b1a6394464e496f85a27221c3023b1a6c3431fa4843f7c4995f9c1",
+      "createdDate": "2026-05-22",
+      "eventLabel": "Planet X Briefing",
+      "filename": "img_0005.jpg"
+    },
+    {
+      "contentGroup": "briefing-b",
+      "contentHash": "sha256:172a44c589b1a6394464e496f85a27221c3023b1a6c3431fa4843f7c4995f9c1",
+      "createdDate": "2026-05-22",
+      "eventLabel": "Planet X Briefing",
+      "filename": "img_0006.jpg"
+    },
+    {
+      "contentGroup": "field-a",
+      "contentHash": "sha256:c40416baf69f1bab6a8091c40de3af2e5994f2de5b4cb758bb37786410e3f799",
+      "createdDate": "2026-05-23",
+      "eventLabel": "Resistance Field Test",
+      "filename": "img_0007.jpg"
+    },
+    {
+      "contentGroup": "field-b",
+      "contentHash": "sha256:b5e6e1bd58e66cab74df0e9c0663646f8eb7497060cbed5686d4d35a51d7a326",
+      "createdDate": "2026-05-23",
+      "eventLabel": "Resistance Field Test",
+      "filename": "img_0008.jpg"
+    },
+    {
+      "contentGroup": "field-c",
+      "contentHash": "sha256:18562d3ed2f2130f61822780fdbc7418a46202aca0eb28b8c4d9455fe67189e3",
+      "createdDate": "2026-05-23",
+      "eventLabel": "Resistance Field Test",
+      "filename": "img_0009.jpg"
+    },
+    {
+      "contentGroup": "archive-a",
+      "contentHash": "sha256:0858cf444dded7810c23c146f693d16dc531459b78dfaf95f0c7c57ecf57c0d6",
+      "createdDate": "2026-05-24",
+      "eventLabel": "EMC Archive",
+      "filename": "img_0010.jpg"
+    }
+  ],
+  "proposedAlbums": [
+    {
+      "album": "WAGMI City Launch",
+      "photoCount": 3,
+      "targetFolder": "2026-05-21_wagmi-city-launch",
+      "uniquePhotoCount": 3
+    },
+    {
+      "album": "Planet X Briefing",
+      "photoCount": 3,
+      "targetFolder": "2026-05-22_planet-x-briefing",
+      "uniquePhotoCount": 3
+    },
+    {
+      "album": "Resistance Field Test",
+      "photoCount": 3,
+      "targetFolder": "2026-05-23_resistance-field-test",
+      "uniquePhotoCount": 3
+    },
+    {
+      "album": "EMC Archive",
+      "photoCount": 1,
+      "targetFolder": "2026-05-24_emc-archive",
+      "uniquePhotoCount": 1
+    }
+  ],
+  "transactionId": "atp_photo_001",
+  "uniquePhotos": [
+    "img_0001.jpg",
+    "img_0002.jpg",
+    "img_0003.jpg",
+    "img_0004.jpg",
+    "img_0005.jpg",
+    "img_0006.jpg",
+    "img_0007.jpg",
+    "img_0008.jpg",
+    "img_0009.jpg",
+    "img_0010.jpg"
+  ]
+}

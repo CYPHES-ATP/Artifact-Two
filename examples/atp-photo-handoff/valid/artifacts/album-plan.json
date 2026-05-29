@@ -1,0 +1,56 @@
+{
+  "albums": [
+    {
+      "album": "WAGMI City Launch",
+      "photos": [
+        "img_0001.jpg",
+        "img_0002.jpg",
+        "img_0003.jpg"
+      ],
+      "targetFolder": "2026-05-21_wagmi-city-launch",
+      "uniquePhotos": [
+        "img_0001.jpg",
+        "img_0002.jpg",
+        "img_0003.jpg"
+      ]
+    },
+    {
+      "album": "Planet X Briefing",
+      "photos": [
+        "img_0004.jpg",
+        "img_0005.jpg",
+        "img_0006.jpg"
+      ],
+      "targetFolder": "2026-05-22_planet-x-briefing",
+      "uniquePhotos": [
+        "img_0004.jpg",
+        "img_0005.jpg",
+        "img_0006.jpg"
+      ]
+    },
+    {
+      "album": "Resistance Field Test",
+      "photos": [
+        "img_0007.jpg",
+        "img_0008.jpg",
+        "img_0009.jpg"
+      ],
+      "targetFolder": "2026-05-23_resistance-field-test",
+      "uniquePhotos": [
+        "img_0007.jpg",
+        "img_0008.jpg",
+        "img_0009.jpg"
+      ]
+    },
+    {
+      "album": "EMC Archive",
+      "photos": [
+        "img_0010.jpg"
+      ],
+      "targetFolder": "2026-05-24_emc-archive",
+      "uniquePhotos": [
+        "img_0010.jpg"
+      ]
+    }
+  ]
+}
