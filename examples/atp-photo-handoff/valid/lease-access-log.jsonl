@@ -1,0 +1,15 @@
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/metadata.json", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.649416Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0001.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.649613Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0002.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.649760Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0003.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.649905Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0004.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650043Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0005.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650182Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0006.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650316Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0007.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650449Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0008.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650662Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0009.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650801Z"}
+{"allowed": true, "leaseId": "lease_photos_read_001", "operation": "read", "path": "/private/tmp/mock_photos_atp/img_0010.jpg", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.650939Z"}
+{"allowed": true, "leaseId": "lease_stage_write_001", "operation": "write", "path": "/tmp/cyphes-atp/runs/atp_photo_001/artifacts/manifest.json", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.651550Z"}
+{"allowed": true, "leaseId": "lease_stage_write_001", "operation": "write", "path": "/tmp/cyphes-atp/runs/atp_photo_001/artifacts/album-plan.json", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.651933Z"}
+{"allowed": true, "leaseId": "lease_stage_write_001", "operation": "write", "path": "/tmp/cyphes-atp/runs/atp_photo_001/artifacts/duplicate-candidates.csv", "reason": "allowed by active lease", "time": "2026-05-25T00:56:26.652220Z"}
+{"allowed": false, "leaseId": "none", "operation": "write", "path": "/private/tmp/mock_photos_atp/illegal-worker-write.txt", "reason": "path outside lease boundary", "time": "2026-05-25T00:56:26.652468Z"}

@@ -1,0 +1,3 @@
+photo_a,photo_b,content_hash,confidence
+img_0005.jpg,img_0006.jpg,sha256:172a44c589b1a6394464e496f85a27221c3023b1a6c3431fa4843f7c4995f9c1,1.0
+img_0001.jpg,img_0003.jpg,sha256:2d6dddd7f661e7d6d7e087cd045643ab29d9e055f58d7311277fe83732e99cd7,1.0

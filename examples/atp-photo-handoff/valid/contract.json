@@ -1,0 +1,31 @@
+{
+  "accept": {
+    "accepted": true,
+    "contractHash": "sha256:4c62aeeac58ef2a5694b8f3815057e2c9e1f1cc5e14e07317ea67d5782afa49e",
+    "type": "accept",
+    "worker": "did:example:agent:worker-42"
+  },
+  "offer": {
+    "acceptance": {
+      "method": "human-approval",
+      "simulated": true
+    },
+    "deliverables": [
+      "manifest.json",
+      "album-plan.json",
+      "duplicate-candidates.csv"
+    ],
+    "leasesRequired": [
+      "read-metadata",
+      "write-staging"
+    ],
+    "scope": "organize, detect duplicates, create album plan",
+    "settlement": {
+      "amount": "0",
+      "asset": "none",
+      "condition": "receipt",
+      "rail": "zero-value"
+    },
+    "type": "offer"
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "audit": true,
+    "boundary": "/private/tmp/mock_photos_atp",
+    "id": "lease_photos_read_001",
+    "nonce": "WzOsL9DBp3SaRQv_cBVHiLZ5",
+    "operations": [
+      "read"
+    ],
+    "purpose": "photo-organization",
+    "resourceRef": "/private/tmp/mock_photos_atp",
+    "retention": "no-retention",
+    "sig": "tvqZDuocbN7nY1ymuhHyWo4gSYlWAt8XRjcrlplrAdTjvvKEpN4WhFXw19ujBVYrTE6rdckIhBPXAkkQRrAjAQ",
+    "ttl": {
+      "end": "2026-05-25T01:56:26.646704Z",
+      "start": "2026-05-25T00:56:26.646700Z"
+    }
+  },
+  {
+    "audit": true,
+    "boundary": "/tmp/cyphes-atp/runs/atp_photo_001/artifacts",
+    "id": "lease_stage_write_001",
+    "nonce": "KNIO4o8l3AvZ3gln7QTQmV8p",
+    "operations": [
+      "write"
+    ],
+    "purpose": "stage-reversible-organization-plan",
+    "resourceRef": "/tmp/cyphes-atp/runs/atp_photo_001/artifacts",
+    "retention": "retain-artifacts-delete-session",
+    "sig": "tQ0inFSgWE9X4SfbWD_X_uXJXWccUBryoU6mzNjXm3OI0XZPeqjWphrcyUV-W7w_eu0m1E3ItqVGpmhYzZYcAw",
+    "ttl": {
+      "end": "2026-05-25T01:56:26.646704Z",
+      "start": "2026-05-25T00:56:26.646700Z"
+    }
+  }
+]
