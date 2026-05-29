@@ -69,4 +69,5 @@ tools/verify_atp_bundle.py    repo-local verifier entrypoint
 - [Receipt Bundle V0](docs/receipt-bundle-v0.md)
 - [Reason Codes V0](docs/reason-codes-v0.md)
 - [Coder Handoff V0](docs/coder-handoff-v0.md)
+- [Verifier Output Contract V0](docs/verifier-output-v0.md)
 - [Collaboration Boundary](docs/collaboration-boundary.md)
