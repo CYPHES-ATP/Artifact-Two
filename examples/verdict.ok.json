@@ -1,0 +1,9 @@
+{
+ "outcome": "OK",
+ "source": "ATP_AGENT_LOOP",
+ "transactionId": "example",
+ "receiptHash": "sha256:example",
+ "eventRoot": "sha256:example",
+ "reason_code": "OK",
+ "lane": "classic_ed25519_v1"
+}
