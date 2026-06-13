@@ -71,7 +71,7 @@ def verify_bundle(bundle_dir: str | Path, policy: VerificationPolicy | None = No
         _verify_artifacts(receipt, root / "artifacts")
         checks["artifacts"] = {"ok": True}
 
-        _verify_contract(contract, envelopes)
+        _verify_contract(contract, envelopes, receipt)
         checks["contract"] = {"ok": True}
 
         _verify_leases_and_access_log(receipt, leases, access_log, policy)
@@ -262,7 +262,8 @@ def _verify_artifacts(receipt: Dict[str, Any], artifact_dir: Path) -> None:
         expected_size = artifact.get("sizeBytes")
         if not isinstance(rel, str) or not isinstance(expected_hash, str) or not isinstance(expected_size, int):
             raise VerificationFailure(codes.INVALID_SCHEMA, "artifact record missing path, sha256, or sizeBytes", f"receipt.json.changed.artifacts[{index}]")
-        candidate = (artifact_dir / rel).resolve(strict=False)
+        bundle_relative = rel.removeprefix("artifacts/")
+        candidate = (artifact_dir / bundle_relative).resolve(strict=False)
         artifact_root = artifact_dir.resolve(strict=False)
         if os.path.commonpath([str(candidate), str(artifact_root)]) != str(artifact_root):
             raise VerificationFailure(codes.INVALID_SCHEMA, "artifact path escapes artifacts directory", f"receipt.json.changed.artifacts[{index}].path")
@@ -273,10 +274,36 @@ def _verify_artifacts(receipt: Dict[str, Any], artifact_dir: Path) -> None:
             raise VerificationFailure(codes.ARTIFACT_HASH_MISMATCH, f"artifact hash or size mismatch: {rel}", f"artifacts/{rel}")
 
 
-def _verify_contract(contract: Any, envelopes: List[Dict[str, Any]]) -> None:
+def _verify_contract(
+    contract: Any,
+    envelopes: List[Dict[str, Any]],
+    receipt: Dict[str, Any],
+) -> None:
     if not isinstance(contract, dict):
         raise VerificationFailure(codes.INVALID_SCHEMA, "contract.json must be an object", "contract.json")
     if len(envelopes) >= 3:
+        offer = envelopes[1].get("body")
+        accept = envelopes[2].get("body")
+        if (
+            isinstance(offer, dict)
+            and offer.get("action") == "worker_offer"
+            and isinstance(offer.get("contract"), dict)
+            and isinstance(accept, dict)
+            and accept.get("action") == "worker_selected"
+        ):
+            expected_hash = sha256_json(contract)
+            receipt_contract_hash = receipt.get("requested", {}).get("contractHash")
+            if (
+                contract != offer["contract"]
+                or accept.get("contractHash") != expected_hash
+                or receipt_contract_hash != expected_hash
+            ):
+                raise VerificationFailure(
+                    codes.TAMPER,
+                    "contract.json does not match the negotiated CYPHES contract",
+                    "contract.json",
+                )
+            return
         expected = {"offer": envelopes[1].get("body"), "accept": envelopes[2].get("body")}
         if contract != expected:
             raise VerificationFailure(codes.TAMPER, "contract.json does not match negotiate envelopes", "contract.json")

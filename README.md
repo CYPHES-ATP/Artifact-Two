@@ -47,6 +47,16 @@ Expected result:
 The output also includes the transaction id, receipt hash, event root, and
 per-check details.
 
+The repository also includes a real CYPHES Node ATP-L1 repository-audit
+transaction. It fetched `octocat/Hello-World` at commit
+`7fd1a60b01f91b314f59955a4e4d4e80d8edf11d`, exercised signed read/write
+leases, produced five artifacts, settled at zero value, and emitted a signed
+Proof of Cognition:
+
+```bash
+python3 tools/verify_atp_bundle.py examples/cyphes-repository-audit/valid
+```
+
 ## Run Tests
 
 ```bash

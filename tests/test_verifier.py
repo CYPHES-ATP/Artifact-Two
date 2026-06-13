@@ -4,10 +4,17 @@ import json
 import shutil
 from pathlib import Path
 
-from artifact_two.verifier import VerificationPolicy, verify_bundle
+from artifact_two.canonical import sha256_json
+from artifact_two.verifier import VerificationPolicy, _verify_contract, verify_bundle
 
 
 FIXTURE = Path(__file__).resolve().parents[1] / "examples" / "atp-photo-handoff" / "valid"
+CYPHES_AUDIT_FIXTURE = (
+    Path(__file__).resolve().parents[1]
+    / "examples"
+    / "cyphes-repository-audit"
+    / "valid"
+)
 
 
 def _copy_bundle(tmp_path: Path) -> Path:
@@ -38,6 +45,34 @@ def test_valid_bundle_passes():
     assert result["reason_code"] == "OK"
     assert result["transactionId"] == "atp_photo_001"
     assert result["receiptHash"].startswith("sha256:")
+
+
+def test_real_cyphes_repository_audit_bundle_passes():
+    result = verify_bundle(CYPHES_AUDIT_FIXTURE)
+    assert result["outcome"] == "OK"
+    assert result["reason_code"] == "OK"
+    assert result["transactionId"].startswith("audit-e2e-")
+
+
+def test_cyphes_direct_contract_binds_offer_selection_and_receipt():
+    contract = {
+        "profile": "cyphes.repository-security-audit/0.1",
+        "transactionId": "audit-1",
+    }
+    contract_hash = sha256_json(contract)
+    envelopes = [
+        {"body": {"action": "announce"}},
+        {"body": {"action": "worker_offer", "contract": contract}},
+        {
+            "body": {
+                "action": "worker_selected",
+                "contractHash": contract_hash,
+            }
+        },
+    ]
+    receipt = {"requested": {"contractHash": contract_hash}}
+
+    _verify_contract(contract, envelopes, receipt)
 
 
 def test_receipt_tamper_is_detected(tmp_path):
