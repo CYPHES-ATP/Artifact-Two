@@ -39,7 +39,7 @@
     "externalState": "staging-directory-only",
     "originalsModified": false
   },
-  "eventRoot": "sha256:6efbb82e3edbec8e21745edf0b28d5aa6dc9af992536cdc1e37cac7c4bf7edef",
+  "eventRoot": "sha256:eeea3f572a169d10674b4478fb0d73707866b83b11a8bc019a20b9d5a74683c1",
   "paid": {
     "amount": "0",
     "asset": "none",
@@ -51,7 +51,7 @@
     "rail": "zero-value",
     "refundPolicy": "not-applicable"
   },
-  "receiptHash": "sha256:edcafcd52e42548e44ebab5c73919255321c37c513e8d1a30046941ec3bf3abf",
+  "receiptHash": "sha256:264c9667041949ad94b827fb9db5d74534c6bfc29a49c8263353dfad8071a457",
   "receiptType": "ProofOfCognition",
   "requested": {
     "budget": {
@@ -81,7 +81,7 @@
   "signatures": [
     {
       "kid": "did:example:agent:worker-42#key-1",
-      "signature": "vCFRn8ZSpZjuyz8T47YOpS2u55uo-kb6BhGcMlU4M_Blict6fMbFkjXWr6Ux6BTTz67XJvia55cDYX8tglntDA",
+      "signature": "HqIufNBt6FKJ0AgTLShhPY6lcapfAz8f11UOz1YLmaJJYBpBktaxDxtJcJfM1VnQG6BahiRng2Hzy7KTvywwCA",
       "type": "Ed25519"
     }
   ],

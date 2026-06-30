@@ -24,7 +24,7 @@
   "cardHash": "sha256:c10218324a7eda231030632f0feeecfd10b685b4c80971802c97e86ddd1af0c0",
   "proof": {
     "kid": "did:example:agent:worker-42#key-1",
-    "signature": "lwm9T8ho1qwMU2lopApvSkA7UIEyKgYwg7S7dRbdGgA_5kHtLfVggVtAYtQnOBjEjhriwzzFAsfy1AYwbRbfBg",
+    "signature": "kaav7s_AI5AQgcwSs3g_KhunuJhrtUGaoqZWf3O454dud684DZUAmPKIaU2RAshDKYC-p8WzdKc-yRrLLV66Dw",
     "type": "Ed25519"
   }
 }

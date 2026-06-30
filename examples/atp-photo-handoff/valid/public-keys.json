@@ -2,11 +2,11 @@
   "did:example:agent:requester-7": {
     "alg": "Ed25519",
     "kid": "did:example:agent:requester-7#key-1",
-    "publicKeyBase64Url": "CzToRLiBb-Vn0YstEWnHWIv6gXvKwW7UZ0ilN_6qytg"
+    "publicKeyBase64Url": "qzmbiTyDBO0SMu7tVCm64qtLXFFTkdqXxHDNsnTL_Qc"
   },
   "did:example:agent:worker-42": {
     "alg": "Ed25519",
     "kid": "did:example:agent:worker-42#key-1",
-    "publicKeyBase64Url": "lLWMyRdCMq8MNLLVBGp8NySpWkt3BNFWvsBPoV0vbUs"
+    "publicKeyBase64Url": "pIgDXx2JlIU98MNbh4UvSCpzzchgocoZnRrNKmflm_8"
   }
 }
